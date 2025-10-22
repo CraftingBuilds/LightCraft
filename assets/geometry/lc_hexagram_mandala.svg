@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <style>:root{--gold:#d8c48a}.g{fill:none;stroke:var(--gold);stroke-width:6;vector-effect:non-scaling-stroke}</style>
+  <g transform="translate(540,540)">
+    <circle class="g" r="420"/><circle class="g" r="300"/><circle class="g" r="180"/>
+    <polygon class="g" points="0,-300 259.8,150 -259.8,150"/>
+    <polygon class="g" points="0,300 -259.8,-150 259.8,-150"/>
+    <g class="g">
+      <line x1="-300" y1="0" x2="300" y2="0"/>
+      <line x1="-150" y1="-259.8" x2="150" y2="259.8"/>
+      <line x1="150" y1="-259.8" x2="-150" y2="259.8"/>
+    </g>
+  </g>
+</svg>

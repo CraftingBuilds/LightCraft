@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <style>:root{--gold:#d8c48a}.g{fill:none;stroke:var(--gold);stroke-width:4;vector-effect:non-scaling-stroke}</style>
+  <g transform="translate(540,540)">
+    <!-- concentric rings -->
+    <circle class="g" r="420"/><circle class="g" r="360"/><circle class="g" r="300"/><circle class="g" r="240"/><circle class="g" r="180"/><circle class="g" r="120"/><circle class="g" r="60"/>
+    <!-- meridians -->
+    <g class="g">
+      <ellipse rx="420" ry="0"/>
+      <g>
+        <ellipse rx="420" ry="210"/><ellipse rx="420" ry="360"/>
+      </g>
+    </g>
+    <!-- radial spokes -->
+    <g class="g">
+      <g transform="rotate(0)"><line x1="0" y1="0" x2="420" y2="0"/></g>
+      <g transform="rotate(15)"><line x1="0" y1="0" x2="420" y2="0"/></g>
+      <g transform="rotate(30)"><line x1="0" y1="0" x2="420" y2="0"/></g>
+      <g transform="rotate(45)"><line x1="0" y1="0" x2="420" y2="0"/></g>
+      <g transform="rotate(60)"><line x1="0" y1="0" x2="420" y2="0"/></g>
+      <g transform="rotate(75)"><line x1="0" y1="0" x2="420" y2="0"/></g>
+      <g transform="rotate(90)"><line x1="0" y1="0" x2="420" y2="0"/></g>
+    </g>
+  </g>
+</svg>

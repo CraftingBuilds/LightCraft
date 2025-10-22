@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <style>
+    :root { --gold:#d8c48a; }
+    .g { fill:none; stroke:var(--gold); stroke-width:6; vector-effect:non-scaling-stroke; }
+  </style>
+  <g transform="translate(540,540)">
+    <circle class="g" r="240"/>
+    <g id="c">
+      <circle class="g" cx="0" cy="0" r="120"/>
+      <circle class="g" cx="120" cy="0" r="120"/>
+      <circle class="g" cx="-120" cy="0" r="120"/>
+      <circle class="g" cx="60" cy="103.923" r="120"/>
+      <circle class="g" cx="-60" cy="103.923" r="120"/>
+      <circle class="g" cx="60" cy="-103.923" r="120"/>
+      <circle class="g" cx="-60" cy="-103.923" r="120"/>
+    </g>
+  </g>
+</svg>

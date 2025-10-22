@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <style>:root{--gold:#d8c48a}.g{fill:none;stroke:var(--gold);stroke-width:6;vector-effect:non-scaling-stroke}</style>
+  <g transform="translate(540,540)">
+    <!-- phi rectangles -->
+    <rect class="g" x="-440" y="-440" width="880" height="880"/>
+    <rect class="g" x="-440" y="-440" width="544.7" height="544.7"/>
+    <rect class="g" x="104.7" y="-440" width="335.3" height="335.3"/>
+    <rect class="g" x="104.7" y="-104.7" width="207.9" height="207.9"/>
+    <rect class="g" x="-103.2" y="-104.7" width="128.0" height="128.0"/>
+    <rect class="g" x="-103.2" y="23.3" width="79.1" height="79.1"/>
+    <rect class="g" x="-24.1" y="23.3" width="48.9" height="48.9"/>
+    <!-- quarter-circle spiral arcs -->
+    <path class="g" d="
+      M -440,440
+      A 880 880 0 0 1 440,-440
+      M 104.7,-104.7
+      A 207.9 207.9 0 0 1 -103.2,103.2
+      M -24.1,72.2
+      A 48.9 48.9 0 0 1 24.8,23.3" />
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <style>:root{--gold:#d8c48a}.g{fill:none;stroke:var(--gold);stroke-width:6;vector-effect:non-scaling-stroke}</style>
+  <g transform="translate(540,540)">
+    <circle class="g" r="420"/><circle class="g" r="240"/>
+    <g class="g">
+      <polygon points="0,-360 106,-106 360,0 106,106 0,360 -106,106 -360,0 -106,-106"/>
+      <line x1="-420" y1="0" x2="420" y2="0"/><line x1="0" y1="-420" x2="0" y2="420"/>
+      <line x1="-297" y1="-297" x2="297" y2="297"/><line x1="-297" y1="297" x2="297" y2="-297"/>
+    </g>
+  </g>
+</svg>

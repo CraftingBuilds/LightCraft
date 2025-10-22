@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <style>:root{--gold:#d8c48a}.g{fill:none;stroke:var(--gold);stroke-width:4;vector-effect:non-scaling-stroke}</style>
+  <path class="g" d="
+    M 540 540
+    m -400,0
+    C 140,100 940,980 540,140
+    S 140,980 940,540
+    S 140,100 140,540
+    S 940,980 540,940
+    S 140,100 940,540" />
+  <circle cx="540" cy="540" r="420" class="g"/>
+</svg>

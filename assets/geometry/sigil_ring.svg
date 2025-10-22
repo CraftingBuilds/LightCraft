@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <style>:root{--gold:#d8c48a}.g{fill:none;stroke:var(--gold);stroke-width:8;vector-effect:non-scaling-stroke}</style>
+  <g transform="translate(540,540)">
+    <circle class="g" r="480"/>
+    <circle class="g" r="420" stroke-dasharray="12 18"/>
+    <circle class="g" r="300"/>
+    <circle class="g" r="180" stroke-dasharray="6 12"/>
+    <circle class="g" r="60"/>
+  </g>
+</svg>

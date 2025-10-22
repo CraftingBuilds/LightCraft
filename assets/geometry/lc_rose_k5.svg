@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <style>:root{--gold:#d8c48a}.g{fill:none;stroke:var(--gold);stroke-width:5;vector-effect:non-scaling-stroke}</style>
+  <g transform="translate(540,540)">
+    <circle class="g" r="420"/>
+    <!-- 5-petal approximation via rotated bezier lobes -->
+    <g class="g">
+      <path d="M0,-0 C120,-330 330,-120 0,-360 C-330,-120 -120,-330 0,0" transform="rotate(0)"/>
+      <path d="M0,-0 C120,-330 330,-120 0,-360 C-330,-120 -120,-330 0,0" transform="rotate(72)"/>
+      <path d="M0,-0 C120,-330 330,-120 0,-360 C-330,-120 -120,-330 0,0" transform="rotate(144)"/>
+      <path d="M0,-0 C120,-330 330,-120 0,-360 C-330,-120 -120,-330 0,0" transform="rotate(216)"/>
+      <path d="M0,-0 C120,-330 330,-120 0,-360 C-330,-120 -120,-330 0,0" transform="rotate(288)"/>
+    </g>
+  </g>
+</svg>

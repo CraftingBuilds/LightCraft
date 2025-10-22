@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <style>:root{--gold:#d8c48a}.g{fill:none;stroke:var(--gold);stroke-width:5;vector-effect:non-scaling-stroke}</style>
+  <g transform="translate(540,540)">
+    <circle class="g" r="420"/><circle class="g" r="300"/><circle class="g" r="180"/>
+    <g class="g">
+      <!-- 12-gon rings -->
+      <polygon points="0,-420 217,-360 360,-217 420,0 360,217 217,360 0,420 -217,360 -360,217 -420,0 -360,-217 -217,-360"/>
+      <polygon points="0,-300 155,-257 257,-155 300,0 257,155 155,257 0,300 -155,257 -257,155 -300,0 -257,-155 -155,-257"/>
+      <polygon points="0,-180 93,-154 154,-93 180,0 154,93 93,154 0,180 -93,154 -154,93 -180,0 -154,-93 -93,-154"/>
+    </g>
+  </g>
+</svg>
