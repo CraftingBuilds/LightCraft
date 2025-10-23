@@ -441,6 +441,9 @@ class LightCraftRenderer:
         
         print("\n  [OPTIMIZATION] Numba JIT compilation will occur on the first few frames...")
         
+        # define visual_clip first so it exists for both try paths
+        visual_clip = VideoClip(moviepy_make_frame, duration=self.duration_s).set_fps(self.fps)
+        
         try:
             # Attempt full video + audio render first
             audio_clip = AudioFileClip(audio_filepath)
@@ -473,8 +476,8 @@ class LightCraftRenderer:
             print(f"--- Visual-only generation complete in {time.time() - start_time:.2f}s ---")
             print(f"  [SAVER] Visual-only video written to '{output_path.replace('.mp4', '_visual_only.mp4')}'")
         
-            except Exception as e:
-                print(f"[CRITICAL ERROR] Failed during video compilation. Ensure 'librosa', 'moviepy', 'numba', and FFMPEG are installed: {e}")
+        except Exception as e:
+            print(f"[CRITICAL ERROR] Failed during video compilation. Ensure 'librosa', 'moviepy', 'numba', and FFMPEG are installed: {e}")
         
         
 if __name__ == "__main__":
