@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <!-- Palette -->
+    <linearGradient id="goldStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2e6b3"/>
+      <stop offset="0.45" stop-color="#d8c48a"/>
+      <stop offset="1" stop-color="#b99c64"/>
+    </linearGradient>
+    <radialGradient id="coinFill" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#3a2a66"/>
+      <stop offset="0.55" stop-color="#231b44"/>
+      <stop offset="1" stop-color="#0e0b1e"/>
+    </radialGradient>
+    <radialGradient id="innerGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#f9f4cf" stop-opacity="0.25"/>
+      <stop offset="0.45" stop-color="#f9f4cf" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#f9f4cf" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Common styles -->
+    <style>
+      .g { fill:none; stroke:url(#goldStroke); vector-effect:non-scaling-stroke; }
+      .s { stroke:url(#goldStroke); }
+      .t { fill:url(#goldStroke); font-family: "Trajan Pro", "Cinzel", "Garamond", serif; letter-spacing: 3px; }
+    </style>
+
+    <!-- Text paths -->
+    <path id="arcTop" d="M 140,540 A 400 400 0 0 1 940 540" />
+    <path id="arcBot" d="M 940,540 A 400 400 0 0 1 140 540" />
+
+    <!-- Small divider dot -->
+    <circle id="dot" r="6" class="s"/>
+
+    <!-- Outer sigils (drawn to match look) -->
+    <g id="sigil-flower" class="g" stroke-width="5">
+      <circle r="18"/>
+      <path d="M0,-10 C7,-10 10,-7 10,0 C10,7 7,10 0,10 C-7,10 -10,7 -10,0 C-10,-7 -7,-10 0,-10 Z"/>
+    </g>
+    <g id="sigil-wave" class="g" stroke-width="4">
+      <path d="M -36,0 C -30,-18 -24,18 -18,0 C -12,-18 -6,18 0,0 C 6,-18 12,18 18,0 C 24,-18 30,18 36,0"/>
+    </g>
+    <g id="sigil-cross" class="g" stroke-width="5">
+      <circle r="10"/><line x1="-16" y1="0" x2="16" y2="0"/><line x1="0" y1="-22" x2="0" y2="22"/>
+    </g>
+    <g id="sigil-ankh" class="g" stroke-width="5">
+      <ellipse rx="10" ry="14"/><line x1="0" y1="14" x2="0" y2="30"/><line x1="-12" y1="28" x2="12" y2="28"/>
+    </g>
+
+    <!-- Waveform band (stylized, symmetric) -->
+    <path id="waveBand" d="
+      M -370,0
+      c 20,-40 40,40 60,0
+      c 20,-40 40,40 60,0
+      c 20,-40 40,40 60,0
+      c 20,-40 40,40 60,0
+      c 20,-40 40,40 60,0
+      c 20,-40 40,40 60,0
+      c 20,-40 40,40 60,0
+      " />
+
+  </defs>
+
+  <!-- Background coin field -->
+  <g id="field">
+    <circle cx="540" cy="540" r="520" fill="url(#coinFill)"/>
+    <circle cx="540" cy="540" r="520" fill="url(#innerGlow)"/>
+  </g>
+
+  <!-- Outer coin rings -->
+  <g id="outer-rings" transform="translate(540,540)">
+    <circle r="520" class="g" stroke-width="28"/>
+    <circle r="492" class="g" stroke-width="14"/>
+    <circle r="468" class="g" stroke-width="6"/>
+  </g>
+
+  <!-- Sigil medallions around ring -->
+  <g id="sigils" transform="translate(540,540)">
+    <!-- Four roundels -->
+    <g transform="rotate(0)">
+      <circle cx="0" cy="-492" r="30" class="g" stroke-width="6"/>
+      <use href="#sigil-flower" x="0" y="-492"/>
+    </g>
+    <g transform="rotate(90)">
+      <circle cx="0" cy="-492" r="30" class="g" stroke-width="6"/>
+      <use href="#sigil-wave" x="0" y="-492"/>
+    </g>
+    <g transform="rotate(180)">
+      <circle cx="0" cy="-492" r="30" class="g" stroke-width="6"/>
+      <use href="#sigil-cross" x="0" y="-492"/>
+    </g>
+    <g transform="rotate(270)">
+      <circle cx="0" cy="-492" r="30" class="g" stroke-width="6"/>
+      <use href="#sigil-ankh" x="0" y="-492"/>
+    </g>
+  </g>
+
+  <!-- Text ring + small divider dots -->
+  <g id="ring-text">
+    <text class="t" font-size="64">
+      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">SOUNDCRAFT</textPath>
+    </text>
+    <g transform="translate(540,540)">
+      <g transform="rotate(88)">
+        <use href="#dot" x="418" y="0"/>
+      </g>
+      <g transform="rotate(272)">
+        <use href="#dot" x="418" y="0"/>
+      </g>
+    </g>
+    <text class="t" font-size="52">
+      <textPath href="#arcBot" startOffset="50%" text-anchor="middle">METHAPASICAL SOUND ALCHEMY</textPath>
+    </text>
+  </g>
+
+  <!-- Inner ring boundary -->
+  <g id="inner-ring" transform="translate(540,540)">
+    <circle r="420" class="g" stroke-width="8"/>
+    <circle r="418" class="g" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- Central geometry group -->
+  <g id="core" transform="translate(540,540)">
+    <!-- Subtle background geometry circles -->
+    <g opacity="0.25">
+      <circle r="360" class="g" stroke-width="2"/>
+      <circle r="300" class="g" stroke-width="2"/>
+      <circle r="240" class="g" stroke-width="2"/>
+      <circle r="180" class="g" stroke-width="2"/>
+      <circle r="120" class="g" stroke-width="2"/>
+    </g>
+
+    <!-- Waveform line across center -->
+    <g class="g" stroke-width="8">
+      <use href="#waveBand" transform="translate(0,0)"/>
+      <use href="#waveBand" transform="scale(-1,1)"/>
+    </g>
+
+    <!-- Sunburst with heart vessel -->
+    <g id="sunheart" class="s" fill="none" stroke-width="10">
+      <!-- Rays (alternating long/short) -->
+      <g id="rays" stroke-linejoin="round">
+        <!-- one ray -->
+        <path d="M0,-295 L22,-220 0,-200 -22,-220 Z"/>
+        <!-- replicate -->
+        <use href="#sunheart" />
+      </g>
+    </g>
+    <g id="rayset" stroke="url(#goldStroke)" fill="none" stroke-width="10" stroke-linejoin="round">
+      <!-- build 20 rays -->
+      <path d="M0,-300 L24,-220 0,-198 -24,-220 Z"/>
+      <path d="M0,-270 L18,-210 0,-192 -18,-210 Z" transform="rotate(18)"/>
+      <path d="M0,-300 L24,-220 0,-198 -24,-220 Z" transform="rotate(36)"/>
+      <path d="M0,-270 L18,-210 0,-192 -18,-210 Z" transform="rotate(54)"/>
+      <path d="M0,-300 L24,-220 0,-198 -24,-220 Z" transform="rotate(72)"/>
+      <path d="M0,-270 L18,-210 0,-192 -18,-210 Z" transform="rotate(90)"/>
+      <path d="M0,-300 L24,-220 0,-198 -24,-220 Z" transform="rotate(108)"/>
+      <path d="M0,-270 L18,-210 0,-192 -18,-210 Z" transform="rotate(126)"/>
+      <path d="M0,-300 L24,-220 0,-198 -24,-220 Z" transform="rotate(144)"/>
+      <path d="M0,-270 L18,-210 0,-192 -18,-210 Z" transform="rotate(162)"/>
+      <path d="M0,-300 L24,-220 0,-198 -24,-220 Z" transform="rotate(180)"/>
+      <path d="M0,-270 L18,-210 0,-192 -18,-210 Z" transform="rotate(198)"/>
+      <path d="M0,-300 L24,-220 0,-198 -24,-220 Z" transform="rotate(216)"/>
+      <path d="M0,-270 L18,-210 0,-192 -18,-210 Z" transform="rotate(234)"/>
+      <path d="M0,-300 L24,-220 0,-198 -24,-220 Z" transform="rotate(252)"/>
+      <path d="M0,-270 L18,-210 0,-192 -18,-210 Z" transform="rotate(270)"/>
+      <path d="M0,-300 L24,-220 0,-198 -24,-220 Z" transform="rotate(288)"/>
+      <path d="M0,-270 L18,-210 0,-192 -18,-210 Z" transform="rotate(306)"/>
+      <path d="M0,-300 L24,-220 0,-198 -24,-220 Z" transform="rotate(324)"/>
+      <path d="M0,-270 L18,-210 0,-192 -18,-210 Z" transform="rotate(342)"/>
+    </g>
+
+    <!-- Heart vessel -->
+    <path d="M0,84
+      C -138,-74 -232,-18 -232,78
+      C -232,206 -58,236 0,138
+      C 58,236 232,206 232,78
+      C 232,-18 138,-74 0,84 Z"
+      class="g" stroke-width="10"/>
+
+    <!-- Crystal in the heart -->
+    <g id="crystal" class="g" stroke-width="6">
+      <polygon points="0,-6 38,40 0,92 -38,40"/>
+      <path d="M0,-6 L0,92"/>
+      <path d="M0,22 L20,40 L0,58 L-20,40 Z"/>
+    </g>
+  </g>
+
+  <!-- Inner coin rim shadow highlight -->
+  <g transform="translate(540,540)">
+    <circle r="420" fill="none" stroke="url(#goldStroke)" stroke-width="2" opacity="0.35"/>
+  </g>
+</svg>
