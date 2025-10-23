@@ -442,23 +442,36 @@ class LightCraftRenderer:
         print("\n  [OPTIMIZATION] Numba JIT compilation will occur on the first few frames...")
         
         try:
-            visual_clip = VideoClip(moviepy_make_frame, duration=self.duration_s).set_fps(self.fps)
-            audio_clip = AudioFileClip(audio_filepath)
-            final_clip = visual_clip.set_audio(audio_clip)
-            
-            print("\n  [ENCODER] Compiling and writing final video file (Numba accelerated)...")
-            final_clip.write_videofile(
-                output_path, 
-                fps=self.fps, 
-                codec='libx264', 
-                temp_audiofile='temp-audio.m4a',
-                remove_temp=True,
-                verbose=False,
-                logger=None 
-            )
-            
-            print(f"--- Generation Complete in {time.time() - start_time:.2f}s ---")
-            print(f"  [SAVER] Final video written to '{output_path}'")
+    visual_clip = VideoClip(moviepy_make_frame, duration=self.duration_s).set_fps(self.fps)
+    try:
+        # Attempt full video + audio render first
+        audio_clip = AudioFileClip(audio_filepath)
+        final_clip = visual_clip.set_audio(audio_clip)
+        print("\n  [ENCODER] Attempting full LightCraft render (with audio)...")
+        final_clip.write_videofile(
+            output_path,
+            fps=self.fps,
+            codec='libx264',
+            temp_audiofile='temp-audio.m4a',
+            remove_temp=True,
+            verbose=False,
+            logger=None
+        )
+        print(f"--- Generation Complete in {time.time() - start_time:.2f}s ---")
+        print(f"  [SAVER] Final video written to '{output_path}'")
+
+    except Exception as audio_error:
+        print(f"[AUDIO ERROR] Failed to combine audio and video ({audio_error}). Falling back to visual-only mode.")
+        print("\n  [ENCODER] Compiling visual-only video (no audio)...")
+        visual_clip.write_videofile(
+            output_path.replace('.mp4', '_visual_only.mp4'),
+            fps=self.fps,
+            codec='libx264',
+            verbose=False,
+            logger=None
+        )
+        print(f"--- Visual-only generation complete in {time.time() - start_time:.2f}s ---")
+        print(f"  [SAVER] Visual-only video written to '{output_path.replace('.mp4', '_visual_only.mp4')}'")
         
         except Exception as e:
             print(f"[CRITICAL ERROR] Failed during video compilation. Ensure 'librosa', 'moviepy', 'numba', and FFMPEG are installed: {e}")
