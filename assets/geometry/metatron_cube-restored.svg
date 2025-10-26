@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <!-- LightCraft Geometry: Metatron’s Cube (Restored Dense Lattice) -->
+  <style>
+    :root{--gold:#d8c48a}
+    .g{fill:none;stroke:var(--gold);vector-effect:non-scaling-stroke}
+    .a{stroke-width:2.6;opacity:.85;stroke-linecap:round;stroke-linejoin:round}
+    .b{stroke-width:2;opacity:.65}
+    .n{fill:var(--gold);opacity:.85}
+  </style>
+  <g transform="translate(540,540)">
+    <!-- radii from your draft (approx 140/242/420) -->
+    <g class="g a">
+      <circle r="420"/>
+      <circle r="242.48"/>
+      <circle r="121.24"/>
+    </g>
+
+    <!-- primary hexagon + inner hexagon -->
+    <g class="g a">
+      <polygon points="0,-420 364,-210 364,210 0,420 -364,210 -364,-210"/>
+      <polygon points="0,-210 182,-105 182,105 0,210 -182,105 -182,-105"/>
+      <line x1="0" y1="-420" x2="0" y2="420"/>
+      <line x1="-364" y1="210" x2="364" y2="-210"/>
+      <line x1="-364" y1="-210" x2="364" y2="210"/>
+    </g>
+
+    <!-- dense web (kept from your glowing draft, simplified only where lines were duplicates) -->
+    <g class="g b">
+      <line x1="420" y1="0" x2="364" y2="210"/>
+      <line x1="420" y1="0" x2="182" y2="315"/>
+      <line x1="420" y1="0" x2="-182" y2="315"/>
+      <line x1="420" y1="0" x2="-364" y2="210"/>
+      <line x1="420" y1="0" x2="-182" y2="-315"/>
+      <line x1="420" y1="0" x2="182" y2="-315"/>
+
+      <line x1="-420" y1="0" x2="-364" y2="-210"/>
+      <line x1="-420" y1="0" x2="-182" y2="-315"/>
+      <line x1="-420" y1="0" x2="182" y2="-315"/>
+      <line x1="-420" y1="0" x2="364" y2="-210"/>
+      <line x1="-420" y1="0" x2="182" y2="315"/>
+      <line x1="-420" y1="0" x2="-182" y2="315"/>
+
+      <line x1="364" y1="-210" x2="182" y2="315"/>
+      <line x1="364" y1="-210" x2="-182" y2="315"/>
+      <line x1="364" y1="-210" x2="-364" y2="210"/>
+      <line x1="364" y1="-210" x2="-182" y2="-315"/>
+      <line x1="364" y1="-210" x2="182" y2="-315"/>
+
+      <line x1="-364" y1="-210" x2="-182" y2="315"/>
+      <line x1="-364" y1="-210" x2="182" y2="315"/>
+      <line x1="-364" y1="-210" x2="364" y2="210"/>
+      <line x1="-364" y1="-210" x2="-182" y2="-315"/>
+      <line x1="-364" y1="-210" x2="182" y2="-315"/>
+
+      <line x1="182" y1="315" x2="-182" y2="315"/>
+      <line x1="182" y1="315" x2="-364" y2="210"/>
+      <line x1="182" y1="315" x2="-182" y2="-315"/>
+      <line x1="182" y1="315" x2="182" y2="-315"/>
+      <line x1="182" y1="315" x2="364" y2="210"/>
+
+      <line x1="-182" y1="315" x2="-364" y2="210"/>
+      <line x1="-182" y1="315" x2="-182" y2="-315"/>
+      <line x1="-182" y1="315" x2="182" y2="-315"/>
+      <line x1="-182" y1="315" x2="364" y2="210"/>
+
+      <line x1="182" y1="-315" x2="-182" y2="-315"/>
+      <line x1="182" y1="-315" x2="-364" y2="-210"/>
+      <line x1="182" y1="-315" x2="364" y2="-210"/>
+    </g>
+
+    <!-- node markers -->
+    <g class="n">
+      <circle r="6"/>
+      <circle cx="420" cy="0" r="6"/>
+      <circle cx="-420" cy="0" r="6"/>
+      <circle cx="364" cy="-210" r="6"/>
+      <circle cx="364" cy="210" r="6"/>
+      <circle cx="-364" cy="-210" r="6"/>
+      <circle cx="-364" cy="210" r="6"/>
+      <circle cx="182" cy="-315" r="6"/>
+      <circle cx="182" cy="315" r="6"/>
+      <circle cx="-182" cy="-315" r="6"/>
+      <circle cx="-182" cy="315" r="6"/>
+    </g>
+  </g>
+</svg>

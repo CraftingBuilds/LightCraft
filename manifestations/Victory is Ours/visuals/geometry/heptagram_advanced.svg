@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 3000" width="3000" height="3000">
+  <style>:root{--gold:#d8c48a}
+.g{fill:none;stroke:var(--gold);stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+</style>
+  <g transform="translate(1500,1500)">
+    <path class="g" stroke-width="5.5" d="M 0.000,-1200.000 L 1169.913,267.025 L -520.660,1081.163 L -938.198,-748.188 L 938.198,-748.188 L 520.660,1081.163 L -1169.913,267.025 Z"/>
+    <path class="g" stroke-width="2.5" opacity="0.85" d="M 0.000,-830.426 L 649.253,-517.762 L 809.605,184.787 L 360.308,748.188 L -360.308,748.188 L -809.605,184.787 L -649.253,-517.762 Z"/>  </g>
+</svg>

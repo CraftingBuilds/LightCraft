@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 3000" width="3000" height="3000">
+  <style>:root{--gold:#d8c48a}
+.g{fill:none;stroke:var(--gold);stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+</style>
+  <g transform="translate(1500,1500)">
+    <path class="g" stroke-width="5" d="M 0.000,-1200.000 L 600.000,-1039.230 L 1039.230,-600.000 L 1200.000,0.000 L 1039.230,600.000 L 600.000,1039.230 L 0.000,1200.000 L -600.000,1039.230 L -1039.230,600.000 L -1200.000,0.000 L -1039.230,-600.000 L -600.000,-1039.230 Z"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="0.000" y1="-1200.000" x2="1200.000" y2="0.000"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="600.000" y1="-1039.230" x2="1039.230" y2="600.000"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="1039.230" y1="-600.000" x2="600.000" y2="1039.230"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="1200.000" y1="0.000" x2="0.000" y2="1200.000"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="1039.230" y1="600.000" x2="-600.000" y2="1039.230"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="600.000" y1="1039.230" x2="-1039.230" y2="600.000"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="0.000" y1="1200.000" x2="-1200.000" y2="0.000"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="-600.000" y1="1039.230" x2="-1039.230" y2="-600.000"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="-1039.230" y1="600.000" x2="-600.000" y2="-1039.230"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="-1200.000" y1="0.000" x2="0.000" y2="-1200.000"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="-1039.230" y1="-600.000" x2="600.000" y2="-1039.230"/>
+    <line class="g" stroke-width="2.2" opacity="0.8" x1="-600.000" y1="-1039.230" x2="1039.230" y2="-600.000"/>  </g>
+</svg>
